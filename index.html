@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi Jazd Samochodowych</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            background-color: #007BFF;
+        }
+        h1 {
+            font-size: 3em;
+            color: white;
+            margin: 0;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        main {
+            display: flex;
+            width: 100%;
+            padding: 20px;
+            justify-content: center; /* Wyśrodkowanie zawartości */
+            align-items: flex-start;
+        }
+        .video-container {
+            width: 100%; /* Pełna szerokość */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        button {
+            margin-top: 10px;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            color: #007BFF;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        button:hover {
+            background-color: #e0e0e0;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+        .service-card {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%; /* Pełna szerokość */
+            max-width: 600px; /* Maksymalna szerokość dla kart usług */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Usługi Jazd Samochodowych</h1>
+    </header>
+    <nav>
+        <a href="cennik.html">Cennik</a>
+        <a href="#miejsca">Miejsca Spotkania</a>
+        <a href="#dlugosc">Długość Jazd</a>
+        <a href="http://127.0.0.1:5500/kalendarz.html">Kalendarz</a>
+    </nav>
+    <main>
+        <div class="video-container">
+            <h2>Nasze Usługi</h2>
+            <div class="service-card">
+                <h3>Jazdy Doszkalające</h3>
+                <p>Oferujemy jazdy doszkalające dla kierowców w każdym wieku. Zwiększ swoje umiejętności za kierownicą!</p>
+                <button>Zarezerwuj Jazdę</button>
+            </div>
+            <div class="service-card">
+                <h3>Jazdy dla Początkujących</h3>
+                <p>Specjalne kursy dla nowych kierowców. Naucz się wszystkiego, co potrzebne do bezpiecznej jazdy.</p>
+                <button>Zarezerwuj Jazdę</button>
+            </div>
+            <div class="service-card">
+                <h3>Transport i Przewóz</h3>
+                <p>Bezpieczny transport do miejsca docelowego. Idealne dla osób potrzebujących pomocy w podróży.</p>
+                <button>Zarezerwuj Transport</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
