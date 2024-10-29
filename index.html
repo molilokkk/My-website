@@ -17,6 +17,7 @@
             text-align: center;
             padding: 20px 0;
             background-color: #007BFF;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         h1 {
             font-size: 3em;
@@ -43,17 +44,15 @@
         }
         main {
             display: flex;
-            width: 100%;
+            flex-direction: column;
+            align-items: center;
             padding: 20px;
-            justify-content: center; /* Wyśrodkowanie zawartości */
-            align-items: flex-start;
         }
         .video-container {
-            width: 100%; /* Pełna szerokość */
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
             flex-direction: column;
+            align-items: center;
         }
         button {
             margin-top: 10px;
@@ -78,8 +77,16 @@
             margin: 10px 0;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Pełna szerokość */
-            max-width: 600px; /* Maksymalna szerokość dla kart usług */
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
         }
     </style>
 </head>
@@ -113,5 +120,8 @@
             </div>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2024 Usługi Jazd Samochodowych. Wszelkie prawa zastrzeżone.</p>
+    </footer>
 </body>
 </html>
